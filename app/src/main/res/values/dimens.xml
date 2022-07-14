@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="corner_toast_small">8dp</dimen>
+    <dimen name="corner_toast">12dp</dimen>
+    <dimen name="toast_border_size">2dp</dimen>
+
+</resources>

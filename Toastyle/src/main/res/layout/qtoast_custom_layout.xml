@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/qtoast_padding"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:id="@+id/qtoast_custom_layout_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/qtoast_text_padding_vertical"
+        android:paddingBottom="@dimen/qtoast_text_padding_vertical"
+        android:gravity="center"
+        android:minWidth="@dimen/qtoast_min_width"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/qtoast_bg_custom"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/qtoast_custom_layout_iconLeft"
+            android:layout_width="@dimen/qtoast_icon_size"
+            android:layout_height="@dimen/qtoast_icon_size"
+            android:layout_marginStart="@dimen/qtoast_icon_margin"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:id="@+id/qtoast_custom_layout_marginLeft"
+            android:layout_width="@dimen/qtoast_icon_margin"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:id="@+id/qtoast_custom_layout_txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/qtoast_text_color"
+            android:includeFontPadding="false"
+            android:textSize="@dimen/qtoast_text_size"
+            android:layout_marginStart="@dimen/qtoast_text_margin_horizontal"
+            android:layout_marginEnd="@dimen/qtoast_text_margin_horizontal"/>
+
+        <View
+            android:id="@+id/qtoast_custom_layout_marginRight"
+            android:layout_width="@dimen/qtoast_icon_margin"
+            android:layout_height="0dp"/>
+
+        <ImageView
+            android:id="@+id/qtoast_custom_layout_iconRight"
+            android:layout_width="@dimen/qtoast_icon_size"
+            android:layout_height="@dimen/qtoast_icon_size"
+            android:layout_marginEnd="@dimen/qtoast_icon_margin"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+</RelativeLayout>
