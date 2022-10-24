@@ -48,7 +48,10 @@ border(R.dimen.toast_border_size, R.color.purple_200)
 
 * Corner Radius
 ```kotlin
-cornerRadius(R.dimen.corner_toast_small) / cornerRadius(R.dimen.corner_toast, 0, 0, R.dimen.corner_toast)
+// All corners
+cornerRadius(R.dimen.corner_toast_small) 
+// Custom corner radius (Top Left, Top Right, Bottom Left, Bottom Right)
+cornerRadius(R.dimen.corner_toast, 0, 0, R.dimen.corner_toast)
 ```
 <img src="https://user-images.githubusercontent.com/26743731/195304276-661667de-b901-4d5b-9738-c09b76fc61a4.gif" width="250px"/><img src="https://user-images.githubusercontent.com/26743731/195304312-ac5e2116-25ff-4d63-88ad-343278aa3d5c.gif" width="250px"/>
 
