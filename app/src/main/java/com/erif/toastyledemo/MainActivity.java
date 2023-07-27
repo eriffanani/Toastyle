@@ -1,13 +1,13 @@
-package com.erif.toastyle;
+package com.erif.toastyledemo;
+
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
-
-import com.erif.toastyle.helper.AdapterRecyclerView;
-import com.erif.toastyle.helper.MainActivityHelper;
+import com.erif.toastyledemo.helper.AdapterRecyclerView;
+import com.erif.toastyledemo.helper.MainActivityHelper;
 
 import java.util.ArrayList;
 import java.util.Arrays;

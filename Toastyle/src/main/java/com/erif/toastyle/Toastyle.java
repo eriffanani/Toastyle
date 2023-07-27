@@ -117,8 +117,7 @@ public class Toastyle {
         toast.setView(layout);
 
         Drawable background = parentView.getBackground();
-        if (background instanceof GradientDrawable) {
-            GradientDrawable drawable = (GradientDrawable) background;
+        if (background instanceof GradientDrawable drawable) {
             drawable.setColor(getColor(R.color.qtoast_background_color));
             drawable.setCornerRadius(0f);
             drawable.setStroke(0, 0);
@@ -197,8 +196,7 @@ public class Toastyle {
         int color = getColor(colorRes);
         if (color != 0) {
             Drawable background = parentView.getBackground();
-            if (background instanceof GradientDrawable) {
-                GradientDrawable drawable = (GradientDrawable) background;
+            if (background instanceof GradientDrawable drawable) {
                 drawable.setColor(color);
                 parentView.setBackground(drawable);
             }
@@ -208,8 +206,7 @@ public class Toastyle {
     public void cornerRadius(@DimenRes int cornerRes) {
         int size = getDimen(cornerRes);
         Drawable background = parentView.getBackground();
-        if (background instanceof GradientDrawable) {
-            GradientDrawable drawable = (GradientDrawable) background;
+        if (background instanceof GradientDrawable drawable) {
             drawable.setCornerRadius(size);
             parentView.setBackground(drawable);
         }
@@ -226,8 +223,7 @@ public class Toastyle {
         int bottomLeft = getDimen(bottomLeftRes);
         int bottomRight = getDimen(bottomRightRes);
         Drawable background = parentView.getBackground();
-        if (background instanceof GradientDrawable) {
-            GradientDrawable drawable = (GradientDrawable) background;
+        if (background instanceof GradientDrawable drawable) {
             float[] corners = new float[]{
                     topLeft, topLeft,
                     topRight, topRight,
@@ -245,8 +241,7 @@ public class Toastyle {
             int color = getColor(colorRes);
             if (color != 0) {
                 Drawable background = parentView.getBackground();
-                if (background instanceof GradientDrawable) {
-                    GradientDrawable drawable = (GradientDrawable) background;
+                if (background instanceof GradientDrawable drawable) {
                     drawable.setStroke(size, color);
                     parentView.setBackground(drawable);
                 }

@@ -1,4 +1,4 @@
-package com.erif.toastyle.helper;
+package com.erif.toastyledemo.helper;
 
 import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.erif.toastyle.R;
+import com.erif.toastyledemo.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,8 +35,7 @@ public class AdapterRecyclerView extends RecyclerView.Adapter<RecyclerView.ViewH
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder getHolder, int position) {
-        if (getHolder instanceof ListHolder) {
-            ListHolder holder = (ListHolder) getHolder;
+        if (getHolder instanceof ListHolder holder) {
             holder.txtTitle.setText(list.get(position));
             holder.parent.setOnClickListener(view -> {
                 if (callback != null) {

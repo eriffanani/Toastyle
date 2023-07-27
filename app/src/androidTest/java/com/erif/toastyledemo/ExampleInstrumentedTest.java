@@ -1,4 +1,4 @@
-package com.erif.toastyle;
+package com.erif.toastyledemo;
 
 import android.content.Context;
 

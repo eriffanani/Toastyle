@@ -1,9 +1,9 @@
-package com.erif.toastyle.helper;
+package com.erif.toastyledemo.helper;
 
 import android.content.Context;
 import android.view.Gravity;
 
-import com.erif.toastyle.R;
+import com.erif.toastyledemo.R;
 import com.erif.toastyle.Toastyle;
 
 public class MainActivityHelper {
