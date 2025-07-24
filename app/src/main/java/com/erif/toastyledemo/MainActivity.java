@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         };
         List<String> list = new ArrayList<>(Arrays.asList(titles));
         adapter.setList(list);
-
     }
 
     private AdapterRecyclerView.Callback callback() {
